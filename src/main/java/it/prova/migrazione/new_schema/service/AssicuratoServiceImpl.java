@@ -1,10 +1,9 @@
 package it.prova.migrazione.new_schema.service;
 
 import java.util.List;
-import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import it.prova.migrazione.new_schema.model.Assicurato;
 import it.prova.migrazione.new_schema.repository.AssicuratoRepository;
 
@@ -14,7 +13,7 @@ public class AssicuratoServiceImpl implements AssicuratoService {
 	private AssicuratoRepository assicuratoRepository;
 	
 	@Override
-	//@Transactional
+	@Transactional("secondaryTransactionManager")
 	public void inserisciTutti(List<Assicurato> listaDiAssicurati) {
 		// STEP 3
 		// carico sul nuovo DB tutti i record di assicurato
