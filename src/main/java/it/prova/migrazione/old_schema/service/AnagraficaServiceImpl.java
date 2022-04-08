@@ -14,7 +14,7 @@ public class AnagraficaServiceImpl implements AnagraficaService {
 	
 	
 	@Override
-	@Transactional
+	//@Transactional
 	public List<AnagraficaCountDTO> trovaTuttiEager() {
 		// STEP 1
 		// carico in una lista di anagrafica tutti i dati dal vecchio DB con join su

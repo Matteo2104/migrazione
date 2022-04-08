@@ -14,12 +14,8 @@ public class AssicuratoServiceImpl implements AssicuratoService {
 	private AssicuratoRepository assicuratoRepository;
 	
 	@Override
-	@Transactional
+	//@Transactional
 	public void inserisciTutti(List<Assicurato> listaDiAssicurati) {
-		
-		
-		
-
 		// STEP 3
 		// carico sul nuovo DB tutti i record di assicurato
 		for (Assicurato assicuratoItem : listaDiAssicurati) {
