@@ -17,16 +17,18 @@ private String nome;
 	private Date dataDiNascita;
 	private String codiceFiscale;
 	private Long count;
+	private Long oldId;
 	
 	
 	public AnagraficaCountDTO() {
 	}
-	public AnagraficaCountDTO(String nome, String cognome, Date dataDiNascita, String codiceFiscale, Long count) {
+	public AnagraficaCountDTO(String nome, String cognome, Date dataDiNascita, String codiceFiscale, Long count, Long oldId) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.dataDiNascita = dataDiNascita;
 		this.codiceFiscale = codiceFiscale;
 		this.count = count;
+		this.oldId = oldId;
 	}
 	
 	
@@ -60,6 +62,12 @@ private String nome;
 	}
 	public void setCount(Long count) {
 		this.count = count;
+	}
+	public Long getOldId() {
+		return oldId;
+	}
+	public void setOldId(Long oldId) {
+		this.oldId = oldId;
 	}
 	
 	

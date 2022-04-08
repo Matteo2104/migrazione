@@ -1,4 +1,4 @@
-package it.prova.migrazione.new_schema.service;
+package it.prova.migrazione.new_schema.service.assicurato;
 
 import java.util.List;
 
